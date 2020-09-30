@@ -47,6 +47,7 @@
 }
 
 .product-list .actions button {
+    width: 90px;
     padding: 10px;
     border-radius: 5px;
     border: 0;

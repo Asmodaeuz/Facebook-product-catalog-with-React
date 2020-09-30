@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import api from '../../services/api'
+import { Link } from 'react-router-dom'
 
 import './styles.css'
 
@@ -25,14 +26,25 @@ export default class Products extends Component {
 
         return (
 
-            <div className="product-info">
+            <div className="wrapper">
 
-                <h1>{product.title}</h1>
-                <p>{product.description}</p>
+                <div className="product-info">
 
-                <p>
-                    URL: <a target="_blank" href={product.url}>{product.url}</a>
-                </p>
+                    <h1>{product.title}</h1>
+                    <p>{product.description}</p>
+
+                    <p>
+                        URL: <a target="_blank" rel="noopener noreferrer" href={product.url}>{product.url}</a>
+                    </p>
+
+                </div>
+                <div className="button">
+                   
+                    <Link to={'/'}>
+                        <button>Back</button>
+                    </Link>
+
+                </div>
 
             </div>
 

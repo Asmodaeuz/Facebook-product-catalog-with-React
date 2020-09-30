@@ -1,6 +1,12 @@
-.product-info {
+.wrapper {
+    display: flex;
+    flex-direction: column;
     max-width: 700px;
     margin: 20px auto 0;
+}
+
+.product-info {
+    margin-top: 20px;
     padding: 20px;
     background: #FFF;
     border-radius: 5px;
@@ -19,4 +25,31 @@
 
 .product-info p a {
     color: #069;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 0 0 100px;
+}
+
+.button a {
+    text-decoration: none;
+}
+
+.button button {
+    width: 90px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    background: #da552f;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.button button:hover {
+    opacity: 1;
 }
